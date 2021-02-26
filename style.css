@@ -252,3 +252,9 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	width: 400px;
 	height: 175px;
 }
+
+/*contact page*/
+.contact-page .contact .contact-icons-wrapper svg {
+	width: 40px;
+	height: 40px;
+}
