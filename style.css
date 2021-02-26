@@ -11,14 +11,12 @@ body {
 	font-family: 'Shippori Mincho', serif;
 	font-size: 16px;
 	font-weight: 400;
-	/* background: linear-gradient(rgba(186, 230, 250, 0.777), rgba(186, 230, 250, 0.877)), no-repeat center;
-	background-size: cover; */
 }
 
 .section-content {
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 50px 200px;
+	padding: 50px 80px 50px 200px;
 }
 
 header .main-navigation {
@@ -91,9 +89,36 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	color: rgba(31, 82, 177, 0.863);
 }
 
+.portfolio .forms-wrapper .row-forms {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.portfolio .forms-wrapper .row-forms:first-child {
+	margin-top: 0;
+}
+
+.portfolio .forms-wrapper .row-forms:last-child {
+	margin-bottom: 0;
+}
+
+.portfolio .forms-wrapper .second-row-forms {
+	padding: 0 30px;
+}
+
+.portfolio .forms-wrapper .third-row-forms {
+	padding: 0 70px;
+} 
+
 .portfolio .wrapper .wrapper__item {
 	position: relative;
 	display: inline-flex;
+}
+
+.portfolio .wrapper .wrapper__item:first-child {
+	margin-left: 0;
 }
 
 .portfolio .websites-wrapper #personnel-hiring-website {
@@ -169,6 +194,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 .portfolio .forms-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .portfolio .forms-subsection {
@@ -176,13 +202,12 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .portfolio .forms-wrapper .forms-wrapper__item {
-	width: 100%;
 	height: 100%;
-	position: relative;
 }
 
 .portfolio .forms-wrapper .forms-wrapper__item {
 	width: auto;
+	height: auto
 }
 
 .portfolio .wrapper .forms-wrapper__item:hover .wrapper__item-bg {
@@ -194,4 +219,17 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	border: 1px solid rgba(197, 183, 183, 0.808);
 	border-radius: 20px;
 	padding: 10px;
+	height: 400px;
+	width: 300px;
+	
+}
+
+.portfolio .forms-wrapper .forms-wrapper__item .form-preview.q {
+	width: 450px;
+	height: 300px;
+}
+
+.portfolio .forms-wrapper .forms-wrapper__item .form-preview.w {
+	width: 400px;
+	height: 175px;
 }
