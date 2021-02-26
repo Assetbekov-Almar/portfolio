@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&display=swap');
 
 *,*:before,*:after {
 	margin: 0;
@@ -75,12 +76,16 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 /*Portfolio*/
 .portfolio {
-	background: linear-gradient(rgba(21, 133, 207, 0.8), rgba(21, 133, 207, 0.8)), url(images/bg.jpg) no-repeat center;
+	background: url(images/bg.jpg) no-repeat center;
 	background-size: cover;
 }
 
 .portfolio .section-title {
 	color: rgb(28, 75, 161);
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	font-size: 37px;
+	letter-spacing: 1.1px;
 }
 
 .portfolio .websites-subsection,
@@ -91,7 +96,11 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 .portfolio .websites-wrapper-title,
 .portfolio .forms-wrapper-title {
 	margin-bottom: 20px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	font-size: 28px;
 	color: rgba(31, 82, 177, 0.863);
+	letter-spacing: 1px;
 }
 
 .portfolio .forms-wrapper .row-forms {
@@ -197,6 +206,10 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	background-color: rgba(255, 255, 255, 0.65);
 }
 
+.portfolio .wrapper .wrapper__item:hover .form-preview {
+	box-shadow: none;
+}
+
 .portfolio .forms-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -227,7 +240,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	height: 450px;
 	width: 300px;
 	background-color: rgb(255, 255, 255);
-	
+	box-shadow: 0 0 15px 2px #fff;
 }
 
 .portfolio .forms-wrapper .second-row-forms .forms-wrapper__item .form-preview {
