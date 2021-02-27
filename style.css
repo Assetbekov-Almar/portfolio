@@ -254,7 +254,67 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 /*contact page*/
+.contact-page .contact .section-title {
+	margin-bottom: 35px;
+	color: rgb(28, 75, 161);
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1.1px;
+}
+
+.contact-page .contact .contact-subsection {
+	display: flex;
+	width: 500px;
+}
+
+.contact-page .contact .contact-subsection .contact-icons-wrapper,
+.contact-page .contact .contact-subsection .contact-links-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-page .contact .contact-subsection .contact-icons-wrapper svg,
+.contact-page .contact .contact-subsection .contact-links-wrapper a {
+	margin: 5px 0;
+}
+
+.contact-page .contact .contact-subsection .contact-icons-wrapper svg:first-child,
+.contact-page .contact .contact-subsection .contact-links-wrapper a:first-child {
+	margin-top: 0;
+}
+
+.contact-page .contact .contact-subsection .contact-icons-wrapper svg:last-child,
+.contact-page .contact .contact-subsection .contact-links-wrapper a:last-child {
+	margin-bottom: 0;
+}
+
+.contact-page .contact .contact-subsection .contact-icons-wrapper {
+	width: 20%;
+	margin-right: 20px;
+	align-items: flex-end;
+}
+
 .contact-page .contact .contact-icons-wrapper svg {
 	width: 40px;
 	height: 40px;
 }
+
+.contact-page .contact .contact-subsection .contact-links-wrapper {
+	width: 80%;
+}
+
+.contact-page .contact .contact-subsection .contact-links-wrapper a {
+	text-decoration: none;
+	width: fit-content;
+	font-size: 27px;
+	color: rgb(0, 0, 238);
+	padding: 2px 4px;
+}
+
+.contact-page .contact .contact-subsection .contact-links-wrapper a:hover {
+	color: rgba(207, 45, 212, 0.877);
+	
+}
+
+
