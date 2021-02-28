@@ -399,3 +399,19 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 .contact-page .contact .contact-subsection.form #contact-form .submit-btn:hover {
 	opacity: 1;
 }
+
+/*about page*/
+.about-page .about .personal-info {
+	display: flex;
+}
+
+.about-page .about .personal-info img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+.about-page .about .skills-info .skills-wrapper svg {
+	width: 80px;
+	height: 80px;
+}
