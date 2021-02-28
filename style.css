@@ -263,7 +263,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
     letter-spacing: 1.1px;
 }
 
-.contact-page .contact .contact-subsection {
+.contact-page .contact .contact-subsection.links {
 	display: flex;
 	width: 500px;
 }
@@ -313,8 +313,58 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .contact-page .contact .contact-subsection .contact-links-wrapper a:hover {
-	color: rgba(207, 45, 212, 0.877);
-	
+	color: rgba(207, 45, 212, 0.877);	
 }
 
+.contact-page .contact .contact-subsection.form {
+	width: 500px;
+}
 
+.contact-page .contact .contact-subsection.form #contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input {
+	padding: 15px 20px;
+	width: 100%;
+	background-color: rgb(226, 225, 225);
+	border-radius: 50px;
+	border: none;
+	font-size: 20px;
+	margin: 0 15px;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input:first-child {
+	margin-left: 0;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input:last-child {
+	margin-right: 0;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .message {
+	background-color: rgb(226, 225, 225);
+	border-radius: 25px;
+	border: none;
+	height: 120px;
+	padding: 15px 20px;
+	font-size: 22px;
+	resize: none;
+	margin-bottom: 10px;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .submit-btn {
+	width: fit-content;
+	padding: 10px 30px;
+	border-radius: 30px;
+	border: none;
+	background-color: rgb(72, 139, 255);
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
