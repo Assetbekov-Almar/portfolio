@@ -260,7 +260,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     font-size: 40px;
-    letter-spacing: 1.1px;
+    letter-spacing: 1.5px;
 }
 
 .contact-page .contact .contact-subsection.links {
@@ -317,12 +317,25 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .contact-page .contact .contact-subsection.form {
-	width: 500px;
+	width: 600px;
+	margin-top: 20px;
+}
+
+.contact-page .contact .contact-subsection.form .form-title {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(31, 82, 177, 0.863);
+    letter-spacing: 1.2px;
+	margin-bottom: 10px;
 }
 
 .contact-page .contact .contact-subsection.form #contact-form {
 	display: flex;
 	flex-direction: column;
+	border: 1px solid rgb(72, 139, 255);
+	padding: 10px;
+	border-radius: 20px;
 }
 
 .contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper {
@@ -331,13 +344,19 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input {
-	padding: 15px 20px;
+	padding: 12px 18px;
 	width: 100%;
-	background-color: rgb(226, 225, 225);
-	border-radius: 50px;
+	background-color: rgb(236, 236, 236);
+	border-radius: 30px;
 	border: none;
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0 15px;
+	color: rgb(77, 112, 207);
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input::placeholder,
+.contact-page .contact .contact-subsection.form #contact-form .message::placeholder {
+	color: rgb(77, 112, 207);
 }
 
 .contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input:first-child {
@@ -349,22 +368,34 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .contact-page .contact .contact-subsection.form #contact-form .message {
-	background-color: rgb(226, 225, 225);
+	background-color: rgb(236, 236, 236);
 	border-radius: 25px;
 	border: none;
-	height: 120px;
-	padding: 15px 20px;
-	font-size: 22px;
+	height: 150px;
+	padding: 12px 18px;
+	font-size: 18px;
 	resize: none;
 	margin-bottom: 10px;
+	color: rgb(77, 112, 207);
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .submit-btn-wrapper {
+	width: 100%;
+	text-align: center;
 }
 
 .contact-page .contact .contact-subsection.form #contact-form .submit-btn {
-	width: fit-content;
 	padding: 10px 30px;
 	border-radius: 30px;
 	border: none;
 	background-color: rgb(72, 139, 255);
 	color: rgb(255, 255, 255);
 	font-size: 20px;
+	cursor: pointer;
+	transition: 0.2s;
+	opacity: 0.9;
+}
+
+.contact-page .contact .contact-subsection.form #contact-form .submit-btn:hover {
+	opacity: 1;
 }

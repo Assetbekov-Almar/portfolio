@@ -88,14 +88,18 @@
 
 			</div>
 
+			
 			<div class="contact-subsection form">
-				<form id="contact-form" action="https://formspree.io/f/xqkgveoy" method="POST">
+				<h2 class="form-title">You could text me directly:</h2>
+				<form id="contact-form" action="https://formspree.io/f/xqkgveoy" method="POST" target="_blank">
 					<div class="inputs-wrapper">
-						<input type="email" name="_replyto" placeholder="Your name">
-						<input type="email" name="_replyto" placeholder="Your email">
+						<input class="input-to-fill" pattern="\S(.*\S)?" type="text" name="name" placeholder="Your name" required title="Please fill out this field.">
+						<input class="input-to-fill" pattern="\S(.*\S)?" type="email" name="_replyto" placeholder="Your email" required>
 					</div>
-					<textarea class="message" name="message" placeholder="Enter a message"></textarea>
-					<button class="submit-btn" type="submit">Send</button>
+					<textarea class="message input-to-fill" name="message" placeholder="Enter a message" required></textarea>
+					<div class="submit-btn-wrapper">
+						<button class="submit-btn" type="submit">Send</button>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -105,7 +109,6 @@
 	<footer>
 
 	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="script.js"></script>
 </body>
 
