@@ -411,7 +411,36 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	height: 300px;
 }
 
+.about-page .about .skills-info {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.about-page .about .skills-info .skills-title {
+	color: rgb(28, 75, 161);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.8px;
+	margin-bottom: 15px;
+}
+
+.about-page .about .skills-info .skills-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .about-page .about .skills-info .skills-wrapper svg {
 	width: 80px;
 	height: 80px;
+	margin: 0 10px;
+}
+
+.about-page .about .skills-info .skills-wrapper svg:first-child {
+	margin-left: 0;
+}
+
+.about-page .about .skills-info .skills-wrapper svg:last-child {
+	margin-right: 0;
 }
