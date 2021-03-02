@@ -405,10 +405,41 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	display: flex;
 }
 
-.about-page .about .personal-info img {
+.about-page .about .personal-info #face-img {
 	border-radius: 50%;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
+}
+
+.about-page .about .personal-info .bio {
+	font-size: 19px;
+	font-weight: 500;
+	color: rgb(81, 53, 184);
+	line-height: 1.6;
+}
+
+.about-page .about .personal-info .bio #bio-name,
+.about-page .about .personal-info .bio #bio-profession {
+	font-weight: 700;
+	color: rgb(56, 14, 206);
+}
+
+.about-page .about .personal-info .location-wrapper {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.about-page .about .personal-info .location-wrapper svg {
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+
+.about-page .about .personal-info .location-wrapper #location {
+	font-size: 18px;
+	font-weight: 700;
+	color: rgb(56, 14, 206);
 }
 
 .about-page .about .skills-info {
