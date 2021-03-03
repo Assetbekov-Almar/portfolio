@@ -310,7 +310,6 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	width: fit-content;
 	font-size: 27px;
 	color: rgb(0, 0, 238);
-	padding: 2px 4px;
 }
 
 .contact-page .contact .contact-subsection .contact-links-wrapper a:hover {

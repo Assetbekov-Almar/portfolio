@@ -36,6 +36,10 @@
 	.about-page .about .personal-info .bio {
 		font-size: 16px;
 	}
+
+	.contact-page .contact .contact-subsection.form {
+    	width: 550px;
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -54,6 +58,7 @@
 		padding: 50px 40px 50px 100px; 
 	}
 
+	/*about-page*/
 	.about-page .about .personal-info #face-img {
 		height: 150px;
 		width: 150px;
@@ -71,6 +76,38 @@
 
 	.about-page .about .personal-info .location-wrapper #location { 
 		font-size: 15px;
+	}
+
+	/*contact-page*/
+	.contact-page .contact .section-title {
+		font-size: 34px;
+	}
+	
+	.contact-page .contact .contact-subsection .contact-links-wrapper a {
+		font-size: 21px;
+	}
+
+	.contact-page .contact .contact-icons-wrapper svg {
+   		width: 31px;
+		height: 31px;
+	}
+
+	.contact-page .contact .contact-subsection .contact-icons-wrapper {
+		width: 16%;
+		margin-right: 15px;
+	}
+
+	.contact-page .contact .contact-subsection .contact-links-wrapper {
+		width: 84%;
+	}
+
+	.contact-page .contact .contact-subsection.form .form-title {
+		font-size: 26px;
+	}
+
+	.contact-page .contact .contact-subsection.links,
+	.contact-page .contact .contact-subsection.form {
+		width: 450px;
 	}
 }
 
@@ -200,5 +237,84 @@
 
 	.about-page .about .skills-info .skills-info-wrapper {
 		margin: 10px 0;
+	}
+
+	.contact-page .contact .contact-subsection.links,
+	.contact-page .contact .contact-subsection.form {
+		width: 335px;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper {
+		flex-direction: column;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input,
+	.contact-page .contact .contact-subsection.form #contact-form .message {
+		font-size: 16px;
+		margin: 5px 0;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input:first-child {
+		margin-top: 0;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.section-content {
+		padding: 25px 20px;
+	}
+
+	.contact-page .contact .contact-subsection.links,
+	.contact-page .contact .contact-subsection.form {
+		width: 100%;
+	}
+
+	.contact-page .contact .contact-subsection .contact-links-wrapper a {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.contact-page .contact .section-title {
+    	font-size: 26px;
+	}
+
+	.contact-page .contact .contact-subsection.form .form-title {
+    	font-size: 18px;
+	}
+
+	.contact-page .contact .contact-icons-wrapper svg {
+    	width: 25px;
+    	height: 25px;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper {
+		margin-bottom: 5px;
+	}
+	
+	.contact-page .contact .contact-subsection .contact-links-wrapper a {
+		font-size: 16px;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .inputs-wrapper input {
+		padding: 8px 14px;
+		font-size: 14px;
+		margin: 3px 0;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .message {
+		padding: 8px 14px;
+		font-size: 14px;
+		border-radius: 20px;
+		height: 120px;
+	}
+
+	.contact-page .contact .contact-subsection.form #contact-form .submit-btn {
+		padding: 6px 20px;
+		font-size: 17px;
 	}
 }

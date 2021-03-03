@@ -18,6 +18,9 @@
 					<span></span>
 				</div>
 			</div>
+
+			<img id="burger-menu-face-img" class="burger-menu-element" src="images/face.jpeg" alt="">
+
 			<nav class="main-navigation burger-menu-element">
 				<ul class="nav-wrapper">
 					<li class="nav-wrapper__item"><a href="index.html">Almar Assetbekov</a></li>
@@ -101,8 +104,8 @@
 				<h2 class="form-title">You could text me directly:</h2>
 				<form id="contact-form" action="https://formspree.io/f/xqkgveoy" method="POST" target="_blank">
 					<div class="inputs-wrapper">
-						<input class="input-to-fill" pattern="\S(.*\S)?" type="text" name="name" placeholder="Your name" required title="Please fill out this field.">
-						<input class="input-to-fill" pattern="\S(.*\S)?" type="email" name="_replyto" placeholder="Your email" required>
+						<input class="input-to-fill" pattern="\S(.*\S)?" type="text" name="name" placeholder="Your name" autocomplete="off" required title="Please fill out this field.">
+						<input class="input-to-fill" pattern="\S(.*\S)?" type="email" name="_replyto" placeholder="Your email" autocomplete="off" required>
 					</div>
 					<textarea class="message input-to-fill" name="message" placeholder="Enter a message" required></textarea>
 					<div class="submit-btn-wrapper">
