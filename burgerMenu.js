@@ -1,6 +1,6 @@
 const burgerMenuElements = [...document.querySelectorAll('.burger-menu-element')],
       burgerMenuBtn = document.querySelector('.header-burger-menu'),
-      burgerMenuEvents = ['click', 'touchstart'],
+      burgerMenuEvents = ['touchstart', 'click'],
       burgerMenuNavbarBg = document.querySelector('.header-burger-navbar-bg')
 
 burgerMenuEvents.forEach(event => {
@@ -20,6 +20,5 @@ burgerMenuEvents.forEach(event => {
 			element.classList.remove('burger-menu-open')
 		})
 		burgerMenuBtn.style.display = "block"
-		
 	})
 })
