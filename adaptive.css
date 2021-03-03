@@ -38,17 +38,167 @@
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.about-page .about .personal-info .bio {
+		font-size: 14px;
+	}
+
+	.about-page .about .skills-info .skills-wrapper svg {
+		width: 60px;
+		height: 60px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.section-content {
 		padding: 50px 40px 50px 100px; 
 	}
 
 	.about-page .about .personal-info #face-img {
-		height: 200px;
-		width: 200px;
+		height: 150px;
+		width: 150px;
+	}
+
+	.about-page .about .personal-info .bio {
+		font-size: 12px;
+		line-height: 1.4;
+	}
+
+	.about-page .about .personal-info .location-wrapper svg {
+		width: 25px;
+		height: 25px;
+	}
+
+	.about-page .about .personal-info .location-wrapper #location { 
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section-content {
+		padding: 35px 40px 35px 40px; 
+	}
+
+	.about.section-content {
+		padding-top: 0;
+	}
+
+	header .main-navigation,
+	.about-page .about .personal-info #face-img,
+	header .section-content #burger-menu-face-img {
+		display: none;
+	}
+
+	header .section-content #burger-menu-face-img.burger-menu-element.burger-menu-open {
+		display: block;
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+		position: absolute;
+		z-index: 4;
+		top: 30px;
+		left: 28px;
+	}
+
+	header .main-navigation.burger-menu-element.burger-menu-open {
+		display: block;
+		position: absolute;
+		z-index: 3;
+		width: 206px;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	header .main-navigation .nav-wrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 1);
+		border-bottom-right-radius: 20px;
+	}
+
+	header .main-navigation .nav-wrapper .nav-wrapper__item {
+		margin: 20px 0;
+	}
+
+	header .main-navigation .nav-wrapper .nav-wrapper__item:first-child {
+		margin-top: 0;
+	}
+
+	header .main-navigation .nav-wrapper .nav-wrapper__item:last-child {
+		margin-bottom: 0;
+	}
+
+	header .header-burger-navbar-bg.burger-menu-element.burger-menu-open {
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background-color: rgba(168, 167, 167, 0.808);
+	}
+
+	header .section-content .header-burger-menu-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	header .section-content .header-burger-menu {
+		display: block;
+		position: relative;
+		height: 24px;
+		min-width: 28px;
+		width: 28px;
+	}
+
+	header .section-content .header-burger-menu span {
+		border-radius: 40px;
+		position: absolute;
+		background-color: rgba(21, 21, 235, 1);
+		width: 100%;
+		height: 6px;
+		left: 0;
+		top: 9px;
+	}
+
+	header .section-content .header-burger-menu::before,
+	header .section-content .header-burger-menu::after {
+		border-radius: 40px;
+		content: " ";
+		position: absolute;
+		background-color: rgba(21, 21, 235, 1);
+		width: 100%;
+		height: 6px;
+		left: 0;
+	}
+	
+	header .section-content .header-burger-menu::before {
+		top: 0;
+	}
+
+	header .section-content .header-burger-menu::after {
+		bottom: 0;
 	}
 
 	.about-page .about .personal-info .bio {
 		font-size: 16px;
+	}
+
+	.about-page .about .personal-info .location-wrapper {
+		margin-top: 20px;
+	}
+
+	.about-page .about .skills-info .skills-title {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+
+	.about-page .about .skills-info .skills-info-wrapper {
+		margin: 10px 0;
 	}
 }

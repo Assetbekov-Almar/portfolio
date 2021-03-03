@@ -412,6 +412,10 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	height: 200px;
 }
 
+header .section-content #burger-menu-face-img {
+	display: none;
+}
+
 .about-page .about .personal-info .bio {
 	font-size: 19px;
 	font-weight: 500;
@@ -472,7 +476,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 .about-page .about .skills-info .skills-wrapper svg {
 	width: 80px;
 	height: 80px;
-	margin: 0 10px;
+	margin: 5px 10px;
 }
 
 .about-page .about .skills-info .skills-wrapper svg:first-child {
