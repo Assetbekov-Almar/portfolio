@@ -1,7 +1,7 @@
 const burgerMenuElements = [...document.querySelectorAll('.burger-menu-element')],
       burgerMenuBtn = document.querySelector('.header-burger-menu')
 
-burgerMenuBtn.addEventListener('click', function () {
+burgerMenuBtn.addEventListener('click touchstart', function () {
 	burgerMenuElements.forEach(element => {
 		element.classList.add('burger-menu-open')
 	})

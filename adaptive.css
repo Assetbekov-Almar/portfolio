@@ -116,6 +116,10 @@
 		padding: 35px 40px 35px 40px; 
 	}
 
+	.contact.section-content {
+		padding: 0 40px;
+	}
+
 	.about.section-content {
 		padding-top: 0;
 	}
@@ -276,11 +280,10 @@
 	.contact-page .contact .contact-subsection .contact-links-wrapper a {
 		font-size: 20px;
 	}
-}
 
-@media screen and (max-width: 425px) {
 	.contact-page .contact .section-title {
-    	font-size: 26px;
+    	font-size: 23px;
+		margin-bottom: 20px;
 	}
 
 	.contact-page .contact .contact-subsection.form .form-title {
