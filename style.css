@@ -201,14 +201,11 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .portfolio .wrapper .wrapper__item:hover .icons-wrapper,
-.portfolio .wrapper .wrapper__item:hover .links-wrapper,
-.portfolio .wrapper .wrapper__item:active .icons-wrapper,
-.portfolio .wrapper .wrapper__item:active .links-wrapper {
+.portfolio .wrapper .wrapper__item:hover .links-wrapper {
 	display: block;
 }
 
-.portfolio .wrapper .wrapper__item:hover .wrapper__item-bg,
-.portfolio .wrapper .wrapper__item:active .wrapper__item-bg {
+.portfolio .wrapper .wrapper__item:hover .wrapper__item-bg {
 	background-color: rgba(255, 255, 255, 0.65);
 }
 
