@@ -1,11 +1,15 @@
 const burgerMenuElements = [...document.querySelectorAll('.burger-menu-element')],
-      burgerMenuBtn = document.querySelector('.header-burger-menu')
+      burgerMenuBtn = document.querySelector('.header-burger-menu'),
+      burgerMenuEvents = ['click', 'touchstart']
 
-burgerMenuBtn.addEventListener('click touchstart', function () {
-	burgerMenuElements.forEach(element => {
-		element.classList.add('burger-menu-open')
+burgerMenuEvents.forEach(event => {
+	burgerMenuBtn.addEventListener(event, function(e) {
+		e.preventDefault()
+		burgerMenuElements.forEach(element => {
+			element.classList.add('burger-menu-open')
+		})
+		this.style.display = "none"
 	})
-	this.style.display = "none"
 })
 
 window.addEventListener('click', (e) => {
