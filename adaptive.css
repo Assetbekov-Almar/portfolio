@@ -320,4 +320,34 @@
 		padding: 6px 20px;
 		font-size: 17px;
 	}
+
+	.portfolio .websites-wrapper #personnel-hiring-website {
+		width: 275px;
+	}
+
+	.portfolio .forms-wrapper .row-forms {
+		flex-wrap: wrap;
+	}
+
+	.portfolio .forms-wrapper .forms-wrapper__item .form-preview {
+		height: 150px;
+		width: 85px;
+		border-radius: 15px;
+	}
+
+	.portfolio .websites-subsection, .portfolio .forms-subsection,
+	.portfolio .forms-wrapper .second-row-forms,
+	.portfolio .forms-wrapper .third-row-forms {
+    	padding: 0;
+	}
+
+	.portfolio .forms-wrapper .second-row-forms .forms-wrapper__item .form-preview {
+		width: 135px;
+		height: 100px;
+	}
+
+	.portfolio .forms-wrapper .third-row-forms .forms-wrapper__item .form-preview {
+		width: 135px;
+		height: 100px;
+	}
 }
