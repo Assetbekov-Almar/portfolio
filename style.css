@@ -77,8 +77,8 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 /*Portfolio*/
 .portfolio {
-	background: url(images/bg.jpg) no-repeat center;
-	background-size: cover;
+	/* background: rgba(165, 165, 240, 0.6); */
+	/* background: rgba(165, 165, 173, 0.397); */
 }
 
 .portfolio .section-title {
@@ -99,7 +99,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	margin-bottom: 20px;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: 700;
-	font-size: 28px;
+	font-size: 32px;
 	color: rgba(31, 82, 177, 0.863);
 	letter-spacing: 1px;
 }
@@ -140,6 +140,7 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	width: 320px;
 	height: 200px;
 	border: none;
+	border-radius: 20px;
 }
 
 .portfolio .wrapper .wrapper__item-bg {
@@ -149,11 +150,12 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	background-color: rgb(255, 255, 255, 0);
+	box-shadow: 0 0 10px 1px rgba(165, 165, 240, 0.4);
 	transition: 0.3s;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border-radius: 20px;
 }
 
 .portfolio .wrapper .wrapper__item-bg .icons-wrapper {
@@ -199,11 +201,14 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .portfolio .wrapper .wrapper__item:hover .icons-wrapper,
-.portfolio .wrapper .wrapper__item:hover .links-wrapper {
+.portfolio .wrapper .wrapper__item:hover .links-wrapper,
+.portfolio .wrapper .wrapper__item:active .icons-wrapper,
+.portfolio .wrapper .wrapper__item:active .links-wrapper {
 	display: block;
 }
 
-.portfolio .wrapper .wrapper__item:hover .wrapper__item-bg {
+.portfolio .wrapper .wrapper__item:hover .wrapper__item-bg,
+.portfolio .wrapper .wrapper__item:active .wrapper__item-bg {
 	background-color: rgba(255, 255, 255, 0.65);
 }
 
@@ -241,7 +246,6 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	height: 450px;
 	width: 300px;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0 0 15px 2px #fff;
 }
 
 .portfolio .forms-wrapper .second-row-forms .forms-wrapper__item .form-preview {
