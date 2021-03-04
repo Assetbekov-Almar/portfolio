@@ -4,7 +4,7 @@ const portfolio = document.querySelector('.portfolio'),
 
 if (touchScreensMediaQuery.matches) {
 	portfolioItemBg.forEach(itemBg => {
-		itemBg.addEventListener('click', function(e) {
+		itemBg.addEventListener('touchstart', function(e) {
 			portfolioItemBg.forEach(item => {
 				item.querySelector('.icons-wrapper').style.display = 'none'
 				item.querySelector('.links-wrapper').style.display = 'none'

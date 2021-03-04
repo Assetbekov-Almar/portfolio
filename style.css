@@ -174,7 +174,9 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 .portfolio .wrapper .wrapper__item-bg .links-wrapper,
 .portfolio .wrapper .wrapper__item-bg .icons-wrapper {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: .5s;
 }
 
 .portfolio .wrapper .wrapper__item-bg .icons-wrapper > svg,
@@ -210,9 +212,10 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 	height: 25px;
 }
 
-.portfolio .wrapper .wrapper__item:hover .icons-wrapper,
-.portfolio .wrapper .wrapper__item:hover .links-wrapper {
-	display: block;
+.portfolio .wrapper .wrapper__item-bg:hover .icons-wrapper,
+.portfolio .wrapper .wrapper__item-bg:hover .links-wrapper {
+	opacity: 1;
+	visibility: visible;
 }
 
 .portfolio .wrapper .wrapper__item:hover .wrapper__item-bg {
