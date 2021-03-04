@@ -1,13 +1,12 @@
 const portfolio = document.querySelector('.portfolio'),
       portfolioItemBg = [...portfolio.querySelectorAll('.wrapper__item-bg')],
-	  portfolioEvents = ['click', 'touchstart'],
+	  portfolioEvents = ['touchstart', 'click'],
  	  touchScreensMediaQuery = window.matchMedia("(max-width: 768px)")
 
-if (touchScreensMediaQuery.matches) {	   
+if (touchScreensMediaQuery.matches) {
 	portfolioItemBg.forEach(itemBg => {
 		portfolioEvents.forEach(event => {
 			itemBg.addEventListener(event, function(e) {
-				e.preventDefault()
 				portfolioItemBg.forEach(item => {
 					item.querySelector('.icons-wrapper').style.display = 'none'
 					item.querySelector('.links-wrapper').style.display = 'none'
@@ -31,7 +30,7 @@ const formsWrapper = document.querySelector('.forms-wrapper'),
 	formsSlidesWidth = formsSlides[0].getBoundingClientRect().width,
 	foprmsPreviousSlideBtn = document.querySelector('.previous-slide-btn'),
 	formsNextSlideBtn = document.querySelector('.next-slide-btn')
-console.log(formsSlidesWidth)
+
 formsSlides.forEach((slide, index) => {
 	slide.style.left = formsSlidesWidth * index + 'px'
 })
