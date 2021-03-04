@@ -1,6 +1,11 @@
 const portfolio = document.querySelector('.portfolio'),
       portfolioItemBg = [...portfolio.querySelectorAll('.wrapper__item-bg')],
- 	  touchScreensMediaQuery = window.matchMedia("(max-width: 768px)")
+      touchScreensMediaQuery = window.matchMedia("(max-width: 768px)"),
+      formsWrapper = document.querySelector('.forms-wrapper'),
+      formsSlides = [...(formsWrapper.children)],
+      formsSlidesWidth = formsSlides[0].getBoundingClientRect().width,
+      foprmsPreviousSlideBtn = document.querySelector('.previous-slide-btn'),
+      formsNextSlideBtn = document.querySelector('.next-slide-btn')
 
 if (touchScreensMediaQuery.matches) {
 	portfolioItemBg.forEach(itemBg => {
@@ -17,18 +22,17 @@ if (touchScreensMediaQuery.matches) {
 
 	window.addEventListener('touchstart', function(e) {
 		portfolioItemBg.forEach(item => {
-			if (e.target.classList.contains('wrapper__item-bg') || e.target.tagName.toLowerCase() === 'a') return
+			console.log()
+			if (
+				e.target.classList.contains('wrapper__item-bg') ||
+			    e.target.tagName.toLowerCase() === 'a' ||
+			    e.target.tagName.toLowerCase() === 'svg'
+				) return
 			item.querySelector('.icons-wrapper').style.display = 'none'
 			item.querySelector('.links-wrapper').style.display = 'none'
 		})
 	})
 }
-
-const formsWrapper = document.querySelector('.forms-wrapper'),
-	formsSlides = [...(formsWrapper.children)],
-	formsSlidesWidth = formsSlides[0].getBoundingClientRect().width,
-	foprmsPreviousSlideBtn = document.querySelector('.previous-slide-btn'),
-	formsNextSlideBtn = document.querySelector('.next-slide-btn')
 
 formsSlides.forEach((slide, index) => {
 	slide.style.left = formsSlidesWidth * index + 'px'
