@@ -509,7 +509,7 @@
 	}
 
 	.portfolio .wrapper .wrapper__item-bg .icons-wrapper {
-		margin-right: 5px;
+		margin-right: 3px;
 	}
 
 	.portfolio .wrapper .wrapper__item-bg svg  {
@@ -518,7 +518,12 @@
 	}
 
 	.portfolio .wrapper .wrapper__item .links-wrapper a {
-		font-size: 16px;
+		font-size: 15px;
+		padding: 2px 2px;
+	}
+
+	.portfolio .wrapper .wrapper__item-bg .icons-wrapper > svg {
+		margin: 15px 0;
 	}
 }
 
