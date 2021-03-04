@@ -17,10 +17,9 @@ if (touchScreensMediaQuery.matches) {
 
 	window.addEventListener('touchstart', function(e) {
 		portfolioItemBg.forEach(item => {
-			if (!e.target.classList.contains('wrapper__item-bg')) {
-				item.querySelector('.icons-wrapper').style.display = 'none'
-				item.querySelector('.links-wrapper').style.display = 'none'
-			}
+			if (e.target.classList.contains('wrapper__item-bg') || e.target.tagName.toLowerCase() === 'a') return
+			item.querySelector('.icons-wrapper').style.display = 'none'
+			item.querySelector('.links-wrapper').style.display = 'none'
 		})
 	})
 }

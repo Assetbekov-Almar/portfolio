@@ -227,6 +227,7 @@
 		z-index: 4;
 		top: 30px;
 		left: 28px;
+		transition: 2s;
 	}
 
 	header .main-navigation.burger-menu-element.burger-menu-open {
