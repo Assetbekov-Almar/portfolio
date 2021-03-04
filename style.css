@@ -86,7 +86,26 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 .portfolio .websites-subsection,
 .portfolio .forms-subsection {
-	padding: 10px 40px;
+	padding: 10px 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.portfolio .slide-btn {
+	position: absolute;
+	top: 6%;
+	font-size: 40px;
+	cursor: pointer;
+	padding: 0 8px;
+	color: rgba(31, 82, 177, 0.863);
+}
+
+.portfolio .next-slide-btn {
+	right: 0;
+}
+
+.portfolio .previous-slide-btn {
+	left: 0;
 }
 
 .portfolio .websites-wrapper-title,
@@ -102,8 +121,12 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 .portfolio .forms-wrapper .row-forms {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	margin: 20px 0;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	overflow-y: auto;
+	align-items: center;
 }
 
 .portfolio .forms-wrapper .row-forms:first-child {
@@ -113,14 +136,6 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 .portfolio .forms-wrapper .row-forms:last-child {
 	margin-bottom: 0;
 }
-
-.portfolio .forms-wrapper .second-row-forms {
-	padding: 0 30px;
-}
-
-.portfolio .forms-wrapper .third-row-forms {
-	padding: 0 70px;
-} 
 
 .portfolio .wrapper .wrapper__item {
 	position: relative;
@@ -211,7 +226,14 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 
 .portfolio .forms-wrapper {
 	display: flex;
-	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+	height: 530px;
+	transition: transform 0.2s ease-in;
+}
+
+.portfolio .hidden-slide-btn {
+	display: none;
 }
 
 .portfolio .forms-subsection {
@@ -219,12 +241,8 @@ header .main-navigation .nav-wrapper .nav-wrapper__item a.active-link {
 }
 
 .portfolio .forms-wrapper .forms-wrapper__item {
-	height: 100%;
-}
-
-.portfolio .forms-wrapper .forms-wrapper__item {
 	width: auto;
-	height: auto
+	height: auto;
 }
 
 .portfolio .forms-wrapper .forms-wrapper__item .form-preview {
