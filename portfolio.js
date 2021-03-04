@@ -1,6 +1,6 @@
 const portfolio = document.querySelector('.portfolio'),
       portfolioItemBg = [...portfolio.querySelectorAll('.wrapper__item-bg')],
-	  portfolioEvents = ['touchstart', 'click'],
+	  portfolioEvents = ['click', 'touchstart'],
  	  touchScreensMediaQuery = window.matchMedia("(max-width: 768px)")
 
 if (touchScreensMediaQuery.matches) {	   
@@ -15,6 +15,13 @@ if (touchScreensMediaQuery.matches) {
 				this.querySelector('.icons-wrapper').style.display = 'block'
 				this.querySelector('.links-wrapper').style.display = 'block'
 			})
+		})
+	})
+
+	window.addEventListener('touchstart', function() {
+		portfolioItemBg.forEach(item => {
+			item.querySelector('.icons-wrapper').style.display = 'none'
+			item.querySelector('.links-wrapper').style.display = 'none'
 		})
 	})
 }

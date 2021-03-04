@@ -504,6 +504,9 @@
     	height: 90px;
 	}
 
+	.portfolio .forms-wrapper .second-row-forms {
+		flex-direction: column;
+	}
 
 }
 
