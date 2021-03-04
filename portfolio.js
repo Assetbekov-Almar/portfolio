@@ -21,13 +21,8 @@ if (touchScreensMediaQuery.matches) {
 	})
 
 	window.addEventListener('touchstart', function(e) {
+		if (e.target.closest('.wrapper__item-bg')) return
 		portfolioItemBg.forEach(item => {
-			console.log()
-			if (
-				e.target.classList.contains('wrapper__item-bg') ||
-			    e.target.tagName.toLowerCase() === 'a' ||
-			    e.target.tagName.toLowerCase() === 'svg'
-				) return
 			item.querySelector('.icons-wrapper').style.display = 'none'
 			item.querySelector('.links-wrapper').style.display = 'none'
 		})
